@@ -4,7 +4,7 @@ import { useConfigContext } from '../../config/provider';
 export function Background() {
   const { config } = useConfigContext();
   let background;
-  if (typeof config?.settings.customization.backgroundImageUrl === 'undefined')  {
+  if (typeof config?.settings.customization.backgroundImageUrl === 'undefined') {
     background = 'none';
   } else {
     background = config?.settings.customization.backgroundImageUrl;
