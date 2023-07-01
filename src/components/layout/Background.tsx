@@ -7,7 +7,7 @@ export function Background() {
   if (typeof config?.settings.customization.backgroundImageUrl === 'undefined') {
     background = 'none';
   } else {
-    background = 'url(' + config?.settings.customization.backgroundImageUrl + ')';
+    background = `url('${config?.settings.customization.backgroundImageUrl}')`;
   }
   return (
     <Global
