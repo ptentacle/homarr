@@ -7,14 +7,14 @@ export function Background() {
   if (typeof config?.settings.customization.backgroundImageUrl === 'undefined') {
     background = 'none';
   } else {
-    background = config?.settings.customization.backgroundImageUrl;
+    background = 'url(' + config?.settings.customization.backgroundImageUrl} + ')';
   }
   return (
     <Global
       styles={{
         body: {
           minHeight: '100vh',
-          backgroundImage: `url('${background}')` || '',
+          backgroundImage: `'${background}'` || '',
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
