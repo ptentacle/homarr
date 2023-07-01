@@ -14,7 +14,7 @@ export function Background() {
       styles={{
         body: {
           minHeight: '100vh',
-          backgroundImage: `'${background}'` || '',
+          backgroundImage: `url('${config?.settings.customization.backgroundImageUrl}')` || '',
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
