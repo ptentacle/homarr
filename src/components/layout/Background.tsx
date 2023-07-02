@@ -9,7 +9,7 @@ export function Background() {
       styles={{
         body: {
           minHeight: '100vh',
-          backgroundImage: `url('${(config?.settings.customization.backgroundImageUrl === 'undefined') ? 'none' : config?.settings.customization.backgroundImageUrl}')` || '',
+          backgroundImage: `url('${(typeof(config?.settings.customization.backgroundImageUrl) === 'undefined') ? 'none' : config?.settings.customization.backgroundImageUrl}')` || '',
           backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
